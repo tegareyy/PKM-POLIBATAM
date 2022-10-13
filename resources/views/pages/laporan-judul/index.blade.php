@@ -23,7 +23,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Data Laporan Judul</h3>
+                            <h3 class="card-title">Data Laporan Proposal</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -33,31 +33,28 @@
                             >
                                 <thead>
                                     <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
+                                        <th>No.</th>
+                                        <th>Tahun</th>
+                                        <th>Skema</th>
+                                        <th>Judul</th>
+                                        <th>Peran</th>
+                                        <th>Edit</th>
+                                        <th>Pengesahan</th>
+                                        <th>Proposal</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Other browsers</td>
-                                        <td>All others</td>
-                                        <td>-</td>
-                                        <td>-</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                         <td></td>
                                     </tr>
                                 </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
-                                    </tr>
-                                </tfoot>
                             </table>
                         </div>
                         <!-- /.card-body -->

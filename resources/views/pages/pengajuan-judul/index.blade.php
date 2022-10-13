@@ -33,7 +33,7 @@
                             >
                                 <thead>
                                     <tr>
-                                        <th>Rendering engine</th>
+                                        <th>Nama Judul PKM</th>
                                         <th>Browser</th>
                                         <th>Platform(s)</th>
                                         <th>Engine version</th>
@@ -49,15 +49,7 @@
                                         <td></td>
                                     </tr>
                                 </tbody>
-                                <tfoot>
-                                    <tr>
-                                        <th>Rendering engine</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
-                                    </tr>
-                                </tfoot>
+                                <tfoot></tfoot>
                             </table>
                         </div>
                         <!-- /.card-body -->

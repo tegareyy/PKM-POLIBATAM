@@ -7,7 +7,7 @@
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1>Laporan Proposal</h1>
+                    <h1>Pengguna</h1>
                 </div>
             </div>
         </div>
@@ -23,7 +23,7 @@
 
                     <div class="card">
                         <div class="card-header">
-                            <h3 class="card-title">Data Pengajuan Proposal</h3>
+                            <h3 class="card-title">Data Pengguna</h3>
                         </div>
                         <!-- /.card-header -->
                         <div class="card-body">
@@ -33,19 +33,19 @@
                             >
                                 <thead>
                                     <tr>
-                                        <th>Nama Laporan PKM</th>
-                                        <th>Browser</th>
-                                        <th>Platform(s)</th>
-                                        <th>Engine version</th>
-                                        <th>CSS grade</th>
+                                        <th>Nama</th>
+                                        <th>Status</th>
+                                        <th>Gender</th>
+                                        <th>Email</th>
+                                        <th>Aksi</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr>
-                                        <td>Other browsers</td>
-                                        <td>All others</td>
-                                        <td>-</td>
-                                        <td>-</td>
+                                        <td>Tegar Irfan Hamid</td>
+                                        <td>Admin</td>
+                                        <td>Laki Laki</td>
+                                        <td>TegarTokyo@gmail.com</td>
                                         <td></td>
                                     </tr>
                                 </tbody>
