@@ -54,117 +54,73 @@
     <main class="">
         @include('pages.landing-page.banner')
         @include('pages.landing-page.jenis-pkm')
-
-
-
-        <section>
-            <div class="container py-3">
-                <h4 class="text-center text-white">TAHAPAN PENDAFTARAN</h4>
-
-                <div class="row">
-                    <div class="col-4 mb-4">
-                        <div class="">
-                            <div class="text-center">
-                                <img src="/image/gambar-sosialiasi.png" height="140" alt="" class="mb-2" />
-                                <h5 class="mb-0">1.Sosialiasi</h5>
-
-                                <p class="mb-0">
-                                    Sosialisasi yang dilakukan oleh TIM PKM
-                                    Polibatam
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="">
-                            <div class="text-center">
-                                <img src="/image/gambar-pengajuan-judul.png" height="140" alt=""
-                                    class="mb-2" />
-                                <h5 class="mb-0">2.Pengajuan Judul</h5>
-
-                                <p class="mb-0">
-                                    Pengajuan Judul Proposal Yang dilakuakan
-                                    oleh Mahasiswa
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="">
-                            <div class="text-center">
-                                <img src="/image/gambar-penilaian-judul.png" height="140" alt=""
-                                    class="mb-2" />
-                                <h5 class="mb-0">3.Penilaian Judul</h5>
-
-                                <p class="mb-0">
-                                    Penilaian Judul Proposal Yang dilakuakan
-                                    oleh Dosen Pembimbing dan Tim PKM
-                                    Polibatam
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="">
-                            <div class="text-center">
-                                <img src="/image/gambar-pengajuan-proposal.png" height="140" alt=""
-                                    class="mb-2" />
-                                <h5 class="mb-0">4.Pengajuan Proposal</h5>
-
-                                <p class="mb-0">
-                                    Apabila Judul Disetujui Mahasiswa daoat
-                                    mengajukan Proposal PKM
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="">
-                            <div class="text-center">
-                                <img src="/image/gambar-penilaian-judul.png" height="140" alt=""
-                                    class="mb-2" />
-                                <h5 class="mb-0">5.Penilaian Proposal</h5>
-
-                                <p class="mb-0">
-                                    Penilaian Proposal Yang dilakukan Dosen
-                                    Pembimbing dan Tim PKM Polibatam
-                                </p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-4 mb-4">
-                        <div class="">
-                            <div class="text-center">
-                                <img src="/image/proposal-disetujui.png" height="140" alt=""
-                                    class="mb-2" />
-                                <h5 class="mb-0">
-                                    6.Propsal PKM Disetujui
-                                </h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        @include('pages.landing-page.tahapan-daftar')
     </main>
-    <footer class="" style="background-color: #000000">
-        <div class="container py-5 text-white">
-            <div class="row">
-                <div class="col-2">
-                    <img src="/image/gambar-polibatam-hitam.png" width="100%" alt="" />
-                </div>
-                <div class="col">
-                    <ul>
-                        <li>
-                            Jl. Ahmad Yani Batam Kota. Kota Batam. kepulauan
-                            Riau. Indonesia
-                        </li>
-                        <li>+62-778-469858 Ext.1017</li>
-                        <li>+62-778-463620</li>
-                        <li>info@polibatam.ac.id</li>
-                    </ul>
+    <footer class="text-white" style="background-color: #373E46">
+        <div class="border-top py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-md-3 text-center text-md-start mb-4 mb-md-0 align-self-center">
+                        <img src="/image/logo-polibatam.png" width="150" alt="" />
+                    </div>
+                    <div class="col-12 col-md-3 text-center text-md-start mb-4 mb-md-0">
+                        <h4 class="h5 mb-3 fw-bold">Special Course</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">Wedding Foods</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">Healthy and Muscle</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">Office Food Daily</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">Happy Kids</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 text-center text-md-start mb-4 mb-md-0">
+                        <h4 class="h5 mb-3 fw-bold">Company</h4>
+                        <ul class="list-unstyled">
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">APIs Developer</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">Career</a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">Terms & Conditions
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-decoration-none lh-lg"
+                                    style="color: var(--muted-color)">Privacy Policy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-12 col-md-3 text-center text-md-start mb-4 mb-md-0">
+                        <h4 class="h5 mb-3 fw-bold">Be Our Friend</h4>
+                        <p style="color: var(--muted-color)" class="lh-lg">
+                            3, Season Park, Jakarta <br />
+                            support@foodyar.co,id <br />
+                            021 - 1111 - 2222
+                        </p>
+                    </div>
                 </div>
             </div>
+        </div>
+        <div class="border-top py-3">
+            <p class="text-center mb-0" style="color: var(--muted-color)">
+                All Rights Reserved &copy; Foodyar 2020
+            </p>
         </div>
     </footer>
 
