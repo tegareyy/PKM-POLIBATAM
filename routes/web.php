@@ -13,6 +13,9 @@ use App\Http\Controllers\PenggunaController;
 Route::get('/', function(){
     return view('pages.landing-page.index');
 });
+Route::get('/pengumuman', function(){
+    return view('pages.landing-page.pengumuman');
+});
 
 Route::resource('/login',LoginController::class);
 
@@ -22,4 +25,3 @@ Route::resource('/admin/pengajuan-proposal',PengajuanProposalController::class);
 Route::resource('/admin/laporan-judul',LaporanJudulController::class);
 Route::resource('/admin/laporan-proposal',LaporanProposalController::class);
 Route::resource('/admin/pengguna',PenggunaController::class);
-
