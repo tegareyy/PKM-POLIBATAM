@@ -26,6 +26,7 @@ Route::group(['prefix' => 'admin'], function(){
 
     Route::resource('/pengajuan-judul',PengajuanJudulController::class);
     Route::resource('/pengajuan-proposal',PengajuanProposalController::class);
+    
     Route::resource('/laporan-judul',LaporanJudulController::class);
     Route::resource('/laporan-proposal',LaporanProposalController::class);
 });

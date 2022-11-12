@@ -30,21 +30,24 @@
                 </li>
 
                 <li class="nav-item">
-                    <a href="#" class="nav-link">
+                    <a href="#"
+                        class="nav-link {{ Request::path() == 'admin/pengajuan-judul' ? 'active' : '' }} {{ Request::path() == 'admin/pengajuan-proposal' ? 'active' : '' }}">
                         <i class="fa fa-envelope-open nav-icon"></i>
                         <p>Pengajuan<i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
-                            <a href="/pengajuan-judul" class="nav-link">
+                            <a href="/admin/pengajuan-judul"
+                                class="nav-link {{ Request::path() == 'admin/pengajuan-judul' ? 'active' : '' }}">
                                 <i class="far fa-file nav-icon"></i>
-                                <p>Pengajuan Judul</p>
+                                <p>Judul Proposal</p>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a href="/pengajuan-proposal" class="nav-link">
+                            <a href="/admin/pengajuan-proposal"
+                                class="nav-link {{ Request::path() == 'admin/pengajuan-proposal' ? 'active' : '' }}">
                                 <i class="far fa-file nav-icon"></i>
-                                <p>Pengajuan Proposal</p>
+                                <p>Proposal</p>
                             </a>
                         </li>
                     </ul>

@@ -13,7 +13,7 @@ class PengajuanProposalController extends Controller
      */
     public function index()
     {
-        return view('pages.pengajuan-proposal.index');
+        return view('pages.pengajuan.pengajuan-proposal.index');
     }
 
     /**
