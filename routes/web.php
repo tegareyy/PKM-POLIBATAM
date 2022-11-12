@@ -6,9 +6,8 @@ use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\LoginController;
 use App\Http\Controllers\PengajuanJudulController;
 use App\Http\Controllers\PengajuanProposalController;
-use App\Http\Controllers\LaporanJudulController;
-use App\Http\Controllers\LaporanProposalController;
 use App\Http\Controllers\DataUserController;
+use App\Http\Controllers\TemplateProposalController;
 
 Route::get('/', function(){
     return view('pages.landing-page.index');
@@ -26,7 +25,6 @@ Route::group(['prefix' => 'admin'], function(){
 
     Route::resource('/pengajuan-judul',PengajuanJudulController::class);
     Route::resource('/pengajuan-proposal',PengajuanProposalController::class);
-    
-    Route::resource('/laporan-judul',LaporanJudulController::class);
-    Route::resource('/laporan-proposal',LaporanProposalController::class);
+
+    Route::resource('/template-proposal', TemplateProposalController::class);
 });
