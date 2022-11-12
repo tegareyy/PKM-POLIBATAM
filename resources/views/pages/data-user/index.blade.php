@@ -47,7 +47,14 @@
                                             <td>Admin</td>
                                             <td>Laki Laki</td>
                                             <td>TegarTokyo@gmail.com</td>
-                                            <td></td>
+                                            <td>
+                                                <a href="@" class="btn btn-warning">
+                                                    <i class="fa fa-edit"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger">
+                                                    <i class="fa fa-trash"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>

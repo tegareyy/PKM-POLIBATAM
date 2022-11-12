@@ -33,8 +33,8 @@
                                             <th>Nama Laporan PKM</th>
                                             <th>Browser</th>
                                             <th>Platform(s)</th>
-                                            <th>Engine version</th>
-                                            <th>CSS grade</th>
+                                            <th>Nilai</th>
+                                            <th>Aksi</th>
                                         </tr>
                                     </thead>
                                     <tbody>
@@ -42,8 +42,19 @@
                                             <td>Other browsers</td>
                                             <td>All others</td>
                                             <td>-</td>
-                                            <td>-</td>
-                                            <td></td>
+                                            <td>
+                                                <a href="#" class="btn btn-primary">
+                                                    Penilaian
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a href="#" class="btn btn-success">
+                                                    <i class="fa fa-check"></i>
+                                                </a>
+                                                <a href="#" class="btn btn-danger">
+                                                    <i class="fa fa-times"></i>
+                                                </a>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
