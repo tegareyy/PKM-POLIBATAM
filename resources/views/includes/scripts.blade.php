@@ -1,48 +1,48 @@
 <!-- jQuery -->
-<script src="plugins/jquery/jquery.min.js"></script>
+<script src="{{ url('/plugins/jquery/jquery.min.js') }}"></script>
 <!-- jQuery UI 1.11.4 -->
-<script src="plugins/jquery-ui/jquery-ui.min.js"></script>
+<script src="{{ url('/plugins/jquery-ui/jquery-ui.min.js') }}"></script>
 <!-- Resolve conflict in jQuery UI tooltip with Bootstrap tooltip -->
 <script>
     $.widget.bridge("uibutton", $.ui.button);
 </script>
 <!-- Bootstrap 4 -->
-<script src="plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+<script src="{{ url('/plugins/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <!-- ChartJS -->
-<script src="plugins/chart.js/Chart.min.js"></script>
+<script src="{{ url('/plugins/chart.js/Chart.min.js') }}"></script>
 <!-- Sparkline -->
-<script src="plugins/sparklines/sparkline.js"></script>
+<script src="{{ url('/plugins/sparklines/sparkline.js') }}"></script>
 <!-- JQVMap -->
-<script src="plugins/jqvmap/jquery.vmap.min.js"></script>
-<script src="plugins/jqvmap/maps/jquery.vmap.usa.js"></script>
+<script src="{{ url('/plugins/jqvmap/jquery.vmap.min.js') }}"></script>
+<script src="{{ url('/plugins/jqvmap/maps/jquery.vmap.usa.js') }}"></script>
 <!-- jQuery Knob Chart -->
-<script src="plugins/jquery-knob/jquery.knob.min.js"></script>
+<script src="{{ url('/plugins/jquery-knob/jquery.knob.min.js') }}"></script>
 <!-- daterangepicker -->
-<script src="plugins/moment/moment.min.js"></script>
-<script src="plugins/daterangepicker/daterangepicker.js"></script>
+<script src="{{ url('/plugins/moment/moment.min.js') }}"></script>
+<script src="{{ url('/plugins/daterangepicker/daterangepicker.js') }}"></script>
 <!-- Tempusdominus Bootstrap 4 -->
-<script src="plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js"></script>
+<script src="{{ url('/plugins/tempusdominus-bootstrap-4/js/tempusdominus-bootstrap-4.min.js') }}"></script>
 <!-- Summernote -->
-<script src="plugins/summernote/summernote-bs4.min.js"></script>
+<script src="{{ url('/plugins/summernote/summernote-bs4.min.js') }}"></script>
 <!-- overlayScrollbars -->
-<script src="plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js"></script>
+<script src="{{ url('/plugins/overlayScrollbars/js/jquery.overlayScrollbars.min.js') }}"></script>
 <!-- AdminLTE App -->
-<script src="dist/js/adminlte.js"></script>
+<script src="{{ url('/dist/js/adminlte.js') }}"></script>
 <!-- DataTables  & Plugins -->
-<script src="plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
-<script src="plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
-<script src="plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
-<script src="plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
-<script src="plugins/jszip/jszip.min.js"></script>
-<script src="plugins/pdfmake/pdfmake.min.js"></script>
-<script src="plugins/pdfmake/vfs_fonts.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.html5.min.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.print.min.js"></script>
-<script src="plugins/datatables-buttons/js/buttons.colVis.min.js"></script>
+<script src="{{ url('/plugins/datatables/jquery.dataTables.min.js') }}"></script>
+<script src="{{ url('/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js') }}"></script>
+<script src="{{ url('/plugins/datatables-responsive/js/dataTables.responsive.min.js') }}"></script>
+<script src="{{ url('/plugins/datatables-responsive/js/responsive.bootstrap4.min.js') }}"></script>
+<script src="{{ url('/plugins/datatables-buttons/js/dataTables.buttons.min.js') }}"></script>
+<script src="{{ url('/plugins/datatables-buttons/js/buttons.bootstrap4.min.js') }}"></script>
+<script src="{{ url('/plugins/jszip/jszip.min.js') }}"></script>
+<script src="{{ url('/plugins/pdfmake/pdfmake.min.js') }}"></script>
+<script src="{{ url('/plugins/pdfmake/vfs_fonts.js') }}"></script>
+<script src="{{ url('/plugins/datatables-buttons/js/buttons.html5.min.js') }}"></script>
+<script src="{{ url('/plugins/datatables-buttons/js/buttons.print.min.js') }}"></script>
+<script src="{{ url('/plugins/datatables-buttons/js/buttons.colVis.min.js') }}"></script>
 <script>
-    $(function () {
+    $(function() {
         $("#example1")
             .DataTable({
                 responsive: true,
@@ -70,7 +70,7 @@
 <!-- FLOT PIE PLUGIN - also used to draw donut charts -->
 <script src="plugins/flot/plugins/jquery.flot.pie.js"></script>
 <script>
-    $(function () {
+    $(function() {
         /*
          * Flot Interactive Chart
          * -----------------------
@@ -110,12 +110,9 @@
 
         var interactive_plot = $.plot(
             "#interactive",
-            [
-                {
-                    data: getRandomData(),
-                },
-            ],
-            {
+            [{
+                data: getRandomData(),
+            }, ], {
                 grid: {
                     borderColor: "#f3f3f3",
                     borderWidth: 1,
@@ -157,7 +154,7 @@
             update();
         }
         //REALTIME TOGGLE
-        $("#realtime .btn").click(function () {
+        $("#realtime .btn").click(function() {
             if ($(this).data("toggle") === "on") {
                 realtime = "on";
             } else {
@@ -224,7 +221,7 @@
                 opacity: 0.8,
             })
             .appendTo("body");
-        $("#line-chart").bind("plothover", function (event, pos, item) {
+        $("#line-chart").bind("plothover", function(event, pos, item) {
             if (item) {
                 var x = item.datapoint[0].toFixed(2),
                     y = item.datapoint[1].toFixed(2);
@@ -301,7 +298,9 @@
                 [5, 17],
                 [6, 9],
             ],
-            bars: { show: true },
+            bars: {
+                show: true
+            },
         };
         $.plot("#bar-chart", [bar_data], {
             grid: {
@@ -335,8 +334,7 @@
          * -----------
          */
 
-        var donutData = [
-            {
+        var donutData = [{
                 label: "Series2",
                 data: 30,
                 color: "#3c8dbc",
