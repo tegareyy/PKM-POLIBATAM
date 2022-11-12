@@ -8,7 +8,7 @@ use App\Http\Controllers\PengajuanJudulController;
 use App\Http\Controllers\PengajuanProposalController;
 use App\Http\Controllers\LaporanJudulController;
 use App\Http\Controllers\LaporanProposalController;
-use App\Http\Controllers\PenggunaController;
+use App\Http\Controllers\DataUserController;
 
 Route::get('/', function(){
     return view('pages.landing-page.index');
@@ -19,9 +19,13 @@ Route::get('/pengumuman', function(){
 
 Route::resource('/login',LoginController::class);
 
-Route::resource('/admin/',DashboardController::class);
-Route::resource('/admin/pengajuan-judul',PengajuanJudulController::class);
-Route::resource('/admin/pengajuan-proposal',PengajuanProposalController::class);
-Route::resource('/admin/laporan-judul',LaporanJudulController::class);
-Route::resource('/admin/laporan-proposal',LaporanProposalController::class);
-Route::resource('/admin/pengguna',PenggunaController::class);
+// route gorup /admin 
+Route::group(['prefix' => 'admin'], function(){
+    Route::resource('/', DashboardController::class);
+    Route::resource('/data-user', DataUserController::class);
+
+    Route::resource('/pengajuan-judul',PengajuanJudulController::class);
+    Route::resource('/pengajuan-proposal',PengajuanProposalController::class);
+    Route::resource('/laporan-judul',LaporanJudulController::class);
+    Route::resource('/laporan-proposal',LaporanProposalController::class);
+});

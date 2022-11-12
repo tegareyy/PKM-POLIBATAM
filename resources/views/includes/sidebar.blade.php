@@ -2,12 +2,7 @@
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="index3.html" class="brand-link">
-        <img
-            src="logo.jpg"
-            alt="AdminLTE Logo"
-            class="brand-image img-circle elevation-3"
-            style="opacity: 0.8"
-        />
+        <img src="logo.jpg" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: 0.8" />
         <span class="brand-text font-weight-light">PKM POLIBATAM</span>
     </a>
 
@@ -15,12 +10,8 @@
     <div class="sidebar">
         <!-- Sidebar Menu -->
         <nav class="mt-2">
-            <ul
-                class="nav nav-pills nav-sidebar flex-column"
-                data-widget="treeview"
-                role="menu"
-                data-accordion="false"
-            >
+            <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu"
+                data-accordion="false">
                 <!-- Add icons to the links using the .nav-icon class
                with font-awesome or any other icon font library -->
                 <li class="nav-item menu-open">
@@ -30,58 +21,39 @@
                     </a>
                 </li>
 
-                <li class="nav-item menu-open">
-                    <a href="/pengguna" class="nav-link">
+                <li class="nav-item ">
+                    <a href="/admin/data-user" class="nav-link">
                         <i class="nav-icon fas fa-users"></i>
-                        <p>Pengguna</p>
+                        <p>Data User</p>
                     </a>
                 </li>
 
                 <li class="nav-item">
                     <a href="#" class="nav-link">
-                        <i class="fa fa-upload nav-icon"></i>
+                        <i class="fa fa-envelope-open nav-icon"></i>
                         <p>Pengajuan<i class="right fas fa-angle-left"></i></p>
                     </a>
                     <ul class="nav nav-treeview">
                         <li class="nav-item">
                             <a href="/pengajuan-judul" class="nav-link">
-                                <i class="fa fa-envelope-open nav-icon"></i>
+                                <i class="far fa-file nav-icon"></i>
                                 <p>Pengajuan Judul</p>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a href="/pengajuan-proposal" class="nav-link">
-                                <i class="far fa-envelope nav-icon"></i>
+                                <i class="far fa-file nav-icon"></i>
                                 <p>Pengajuan Proposal</p>
                             </a>
                         </li>
                     </ul>
                 </li>
-                <li class="nav-item">
-                    <a href="#" class="nav-link">
+
+                <li class="nav-item ">
+                    <a href="/pengguna" class="nav-link">
                         <i class="nav-icon fas fa-file"></i>
-                        <p>
-                            Laporan
-                            <i class="right fas fa-angle-left"></i>
-                        </p>
+                        <p>Template Proposal</p>
                     </a>
-                    <ul class="nav nav-treeview">
-                        <li class="nav-item">
-                            <a href="/laporan-judul" class="nav-link">
-                                <i class="far fa-folder nav-icon"></i>
-                                <p>Laporan Judul</p>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="/laporan-proposal" class="nav-link">
-                                <i class="far fa-folder nav-icon"></i>
-                                <p>
-                                    Laporan Proposal
-                                    <i class="right fas fa"></i>
-                                </p>
-                            </a>
-                        </li>
-                    </ul>
                 </li>
             </ul>
         </nav>

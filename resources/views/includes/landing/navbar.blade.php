@@ -20,10 +20,10 @@
                     <a class="nav-link" href="#">Contact Us</a>
                 </li>
             </ul>
-            <form class="d-flex" role="search">
-                <button class="btn btn-success" type="submit">
-                    Search
-                </button>
+            <form class="d-flex">
+                <a href="/login" class="btn btn-success">
+                    Login
+                </a>
             </form>
         </div>
     </div>
