@@ -81,4 +81,10 @@ class PengajuanProposalController extends Controller
     {
         //
     }
+
+    public function penilaian($id)
+    {
+        
+        return view('pages.pengajuan.pengajuan-proposal.penilaian');
+    }
 }
